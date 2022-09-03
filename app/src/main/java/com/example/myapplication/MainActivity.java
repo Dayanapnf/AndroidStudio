@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         textDescricao = findViewById(R.id.textDescricao);
 
     }
-    @SuppressLint("SetTextI18n")
+    @SuppressLint({"SetTextI18n", "DefaultLocale"})
     public void calcular (View viem){
         double precoGasolina = Double.parseDouble(editGasolina.getText().toString());
         double precoAlcool   = Double.parseDouble(editAlcool.getText().toString());

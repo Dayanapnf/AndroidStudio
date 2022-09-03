@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         /* se o preçoAlcool / precoGasolina >=0.7 -> utilizar gasolina
            senão -> utilizar alcool
          */
-        textDescricao.setText("RESULTADO \n-ÁLCOOL: R$ "+ editAlcool.getText() + "\n-GASOLINA: R$ " + editGasolina.getText());
+        textDescricao.setText(String.format("RESULTADO = %.4f",resultado) + "\n-ÁLCOOL: R$ "+ editAlcool.getText() + "\n-GASOLINA: R$ " + editGasolina.getText());
         if (resultado >= 0.7) {
             textResultado.setText("ABASTEÇA COM GASOLINA");
         } else {
